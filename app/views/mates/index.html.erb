@@ -1,0 +1,103 @@
+
+<div class="topgreenb"></div>
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <h1>Meet Our Supports IRL</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns"> <%= link_to 'New Mate', new_mate_path %></div>
+
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <!-- USE GRID LIBRARY HERE -->
+      <% @mates.each do |mate| %>
+
+      <div class="supportirlbox">
+        <h1><%= mate.realname %></h1>
+        <h5><%= mate.role %></h5>
+
+        <p><%= link_to 'Show', mate %></p>
+        <p><%= link_to 'Edit', edit_mate_path(mate) %></p>
+        <p><%= link_to 'Destroy', mate, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+
+      <!--
+      <tr>
+        <td><%= mate.ign %></td>
+        <td><%= mate.role %></td>
+        <td><%= mate.realname %></td>
+        <td><%= mate.about %></td>
+        <td><%= mate.smedia1 %></td>
+        <td><%= mate.smedia2 %></td>
+        <td><%= mate.smedia3 %></td>
+        <td><%= mate.smedia4 %></td>
+        <td><%= mate.smedia5 %></td>
+        <td><%= mate.extra1 %></td>
+        <td><%= mate.extra2 %></td>
+        <td><%= link_to 'Show', mate %></td>
+        <td><%= link_to 'Edit', edit_mate_path(mate) %></td>
+        <td><%= link_to 'Destroy', mate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      -->
+    <% end %>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--
+<table>
+  <thead>
+    <tr>
+      <th>Ign</th>
+      <th>Role</th>
+      <th>Realname</th>
+      <th>About</th>
+      <th>Smedia1</th>
+      <th>Smedia2</th>
+      <th>Smedia3</th>
+      <th>Smedia4</th>
+      <th>Smedia5</th>
+      <th>Extra1</th>
+      <th>Extra2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
+
+  <tbody>
+    <% @mates.each do |mate| %>
+      <tr>
+        <td><%= mate.ign %></td>
+        <td><%= mate.role %></td>
+        <td><%= mate.realname %></td>
+        <td><%= mate.about %></td>
+        <td><%= mate.smedia1 %></td>
+        <td><%= mate.smedia2 %></td>
+        <td><%= mate.smedia3 %></td>
+        <td><%= mate.smedia4 %></td>
+        <td><%= mate.smedia5 %></td>
+        <td><%= mate.extra1 %></td>
+        <td><%= mate.extra2 %></td>
+        <td><%= link_to 'Show', mate %></td>
+        <td><%= link_to 'Edit', edit_mate_path(mate) %></td>
+        <td><%= link_to 'Destroy', mate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+-->
+
+<br>
+
+

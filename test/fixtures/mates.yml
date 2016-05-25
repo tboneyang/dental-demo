@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ign: MyString
+  role: MyString
+  realname: MyString
+  about: MyText
+  smedia1: MyString
+  smedia2: MyString
+  smedia3: MyString
+  smedia4: MyString
+  smedia5: MyString
+  extra1: MyText
+  extra2: MyText
+
+two:
+  ign: MyString
+  role: MyString
+  realname: MyString
+  about: MyText
+  smedia1: MyString
+  smedia2: MyString
+  smedia3: MyString
+  smedia4: MyString
+  smedia5: MyString
+  extra1: MyText
+  extra2: MyText

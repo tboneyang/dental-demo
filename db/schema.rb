@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160524001400) do
+ActiveRecord::Schema.define(version: 20160525020711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "mates", force: :cascade do |t|
+    t.string   "ign"
+    t.string   "role"
+    t.string   "realname"
+    t.text     "about"
+    t.string   "smedia1"
+    t.string   "smedia2"
+    t.string   "smedia3"
+    t.string   "smedia4"
+    t.string   "smedia5"
+    t.text     "extra1"
+    t.text     "extra2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "statics", force: :cascade do |t|
     t.datetime "created_at", null: false

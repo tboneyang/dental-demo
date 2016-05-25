@@ -1,0 +1,61 @@
+<%= form_for(@mate) do |f| %>
+  <% if @mate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mate.errors.count, "error") %> prohibited this mate from being saved:</h2>
+
+      <ul>
+      <% @mate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ign %><br>
+    <%= f.text_field :ign %>
+  </div>
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :realname %><br>
+    <%= f.text_field :realname %>
+  </div>
+  <div class="field">
+    <%= f.label :about %><br>
+    <%= f.text_area :about %>
+  </div>
+  <div class="field">
+    <%= f.label :smedia1 %><br>
+    <%= f.text_field :smedia1 %>
+  </div>
+  <div class="field">
+    <%= f.label :smedia2 %><br>
+    <%= f.text_field :smedia2 %>
+  </div>
+  <div class="field">
+    <%= f.label :smedia3 %><br>
+    <%= f.text_field :smedia3 %>
+  </div>
+  <div class="field">
+    <%= f.label :smedia4 %><br>
+    <%= f.text_field :smedia4 %>
+  </div>
+  <div class="field">
+    <%= f.label :smedia5 %><br>
+    <%= f.text_field :smedia5 %>
+  </div>
+  <div class="field">
+    <%= f.label :extra1 %><br>
+    <%= f.text_area :extra1 %>
+  </div>
+  <div class="field">
+    <%= f.label :extra2 %><br>
+    <%= f.text_area :extra2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
