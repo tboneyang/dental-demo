@@ -1,3 +1,79 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcomebox{
+	height:100vh;
+	background-image: url("/rift.jpg");//url("/ardorbg.jpeg");
+	background-size:cover;
+	z-index:-100;
+
+	.centersloganbox{
+		text-align:center;
+		padding-top:30vh;
+
+		.shadedbox{
+			border-radius:20px;
+			background:rgba(1,1,1,0.1);
+			padding:20px;
+			max-width:600px;
+			margin:auto;
+
+		}
+
+		h1{
+			//display:none;
+			color:white;
+			margin-bottom:0px;
+			letter-spacing:3px;
+			font-size:4em;
+		}
+
+		h5{
+			
+			padding:0px;
+			color:white;
+			
+			
+			
+
+		}
+	}	
+
+	video{
+		display:none;
+		position:absolute;
+	    top: 50%;
+	    left: 50%;
+	    min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+	    z-index: -100;
+	    transform: translateX(-50%) translateY(-50%);
+	 	background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+	  	background-size: cover;
+	  	transition: 1s opacity;
+	}
+
+	.bottomlinkbox{
+		position:absolute;
+		bottom:0px;
+		height:auto;
+		padding-top:10px;
+		padding-bottom:10px;
+		width:100%;
+		left:0px;
+		background:rgba(1,1,1,0.2);
+		z-index:10;
+
+		text-align:center;
+
+		a{
+			z-index:10;
+			color:white;
+			text-decoration:none;
+			cursor:pointer;
+		}
+		a:hover{
+			background:none;
+		}
+	}
+}
+

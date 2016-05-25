@@ -1,0 +1,113 @@
+.teamsectiontitle{
+	text-align:Center;
+	padding-top:50px;
+	padding-bottom:20px;
+}
+
+.teamsection{
+	.columns{
+		//margin:0 !important;
+	}
+	.four{
+		//width:33.333333333333333% !important;
+	}
+}
+
+.teammatebox{
+	position:relative;
+	background-image:url("/Wildturtle.jpg");
+	background-size:cover;
+	min-height:300px;
+	background-position:center center;
+
+	h5{
+		color:white;
+		background:rgba(1,1,1,0.2);
+		//font-size:15px;
+		padding-left:15px;
+		padding-top:5px;
+		margin-bottom:0px;
+	}
+	p{
+		color:white;
+		padding-left:15px;
+	}
+
+	.matehover{
+		display:none;
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		background:rgba(1,1,1,0.5);
+		text-align:center;
+
+		.teammaterole{
+			display:none;
+		}
+	}
+
+	.matesocialmediabar{
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		text-align:center;
+		width:100%;
+		padding-top:10px;
+
+		ul{
+			list-style:none;
+			margin-bottom:0px;
+		}
+		li{
+			display:inline-block;
+			margin-left:3px;
+			margin-right:3px;
+		}
+
+		a:hover{
+			background:none;
+		}
+
+		img{
+			height:25px;
+			width:25px;
+			border:2px solid white;
+			border-radius:100%;
+		}
+
+		.whitet{
+			border:none;
+			height:28px;
+			width:28px;
+			background:white;
+		}
+	 	.whitey{
+			height:25px;
+			width:25px;
+		}
+	}
+}
+
+.teammatebox:hover{
+	cursor:pointer;
+}
+
+
+.secondbottombutton{
+	text-align:center;
+
+	a{
+		margin-top:20px;
+		display:inline-block;
+		text-decoration:none;
+		color:black;
+		padding:10px;
+		border:1px solid black;
+		margin-bottom:40px;
+	}
+	a:hover{
+		background:none;
+	}
+}
