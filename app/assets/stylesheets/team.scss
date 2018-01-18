@@ -5,6 +5,8 @@
 }
 
 .teamsection{
+	margin-top:-10px;
+	background:white !important;
 	.columns{
 		//margin:0 !important;
 	}
@@ -12,6 +14,52 @@
 		//width:33.333333333333333% !important;
 	}
 }
+
+
+.teamrow{
+	height:33vw;
+}
+.teambox{
+	height:100%;
+	position:relative;
+	width:25%;
+	float:left;
+
+	img{
+		height:100% !important;
+		width:100%;
+	}
+}
+
+.tboverlay{
+	display:none;
+	position:absolute;
+	left:20px;
+	bottom:70px;
+	font-size:30px;
+	width:100%;
+	height:30px;
+	text-align:left;
+	font-weight:bold;
+
+	.ttitle{
+		margin-top:-30px;
+		font-size:20px;
+	}
+}
+.teambox:hover{
+
+	img{
+		filter: grayscale(50%);
+	}
+	.tboverlay{
+		display:inline-block;
+	}
+	cursor:pointer;
+}
+
+
+
 
 .teammatebox{
 	position:relative;

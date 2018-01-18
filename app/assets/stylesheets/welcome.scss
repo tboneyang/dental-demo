@@ -1,12 +1,25 @@
+#bgvid{
+
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+
+  transition: 1s opacity;
+
+}
+
+
 .welcomebox{
-	height:100vh;
-	background-image: url("/rift.jpg");//url("/ardorbg.jpeg");
-	background-size:cover;
 	z-index:-100;
 
 	.centersloganbox{
-		text-align:center;
-		padding-top:30vh;
+		text-align:right;
+		position:absolute;
+		bottom: 150px;
+		right: 150px;
+
 
 		.shadedbox{
 			border-radius:20px;
@@ -22,7 +35,7 @@
 			color:white;
 			margin-bottom:0px;
 			letter-spacing:3px;
-			font-size:4em;
+			font-size:3em;
 		}
 
 		h5{
